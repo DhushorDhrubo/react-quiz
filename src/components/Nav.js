@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assests/logo.png';
 import '../styles/Nav.css';
 import Account from './Account';
+import {Link} from 'react-router-dom';
 
 function Nav() {
     return (
@@ -9,10 +10,10 @@ function Nav() {
            <nav className='nav'>
       <ul>
         <li>
-          <a href="index.html" className='brand'>
+          <Link to="/" className='brand'>
             <img src={logo} alt="Quiz logo" />
             <h3>Quiz App</h3>
-          </a>
+          </Link>
         </li>
       </ul>
 <Account/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Nav.css';
+import {Link} from 'react-router-dom';
 
 function Account() {
     return (
@@ -8,7 +9,8 @@ function Account() {
         <span className='material-icons-outlined' title="Account">
           account_circle
         </span>
-        <a href="signup.html">Signup</a>
+        <Link to ="/signup">Signup</Link>
+        <Link to ="/login">Login</Link>
         {/* <!-- <span class="material-icons-outlined" title="Logout"> logout </span> --> */}
       </div>
         </>
